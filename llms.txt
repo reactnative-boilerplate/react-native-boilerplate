@@ -1,0 +1,33 @@
+# NativeExpress
+
+> A commercial React Native and Expo boilerplate. You buy a licence and receive the
+> source on GitHub: a working iOS and Android app with authentication, Postgres,
+> payments, push, analytics and three AI features already wired together.
+
+NativeExpress is a paid starter kit you own and edit, not a library you install or a
+framework you build against. It is bought once, not subscribed to, and every future
+version is included. This page and the public repository at
+https://github.com/reactnative-boilerplate/react-native-boilerplate describe the
+product; the source code is in a private repository that buyers get access to.
+
+Licences are one-time and priced in USD: Solo $229 (1 seat), Startup $599 (up to 5
+seats), Agency $1,124 (up to 10 seats). Every tier allows commercial use and includes
+lifetime updates.
+
+The stack is Expo SDK 57, React Native 0.86, React 19.2 and TypeScript 6.0. Supabase
+provides Postgres, authentication and edge functions. RevenueCat handles in-app
+purchases and Superwall the paywalls. OneSignal sends push, PostHog collects analytics
+and Sentry reports crashes. The AI features (chat, image generation, camera scan) run
+on OpenRouter through the Vercel AI SDK. Styling is Uniwind, which is Tailwind CSS v4
+for React Native, with HeroUI Native components.
+
+The current release is 2.1.1, published 2026-10-02.
+
+## Links
+
+- [NativeExpress](https://www.native.express): Product site, pricing and purchase.
+- [Product summary for agents (llms.txt)](https://www.native.express/llms.txt): The maintained version of this summary.
+- [Documentation](https://docs.native.express): Setup, every integration, and store submission.
+- [Documentation index for agents (llms.txt)](https://docs.native.express/llms.txt): Every documentation page as a titled, described link.
+- [Changelog](https://www.native.express/changelog): Every release.
+- [Licence](https://www.native.express/legal/license): What a licence allows.
