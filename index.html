@@ -4,81 +4,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Native Boilerplate: Expo, Supabase, AI | NativeExpress</title>
   <meta name="description"
-    content="NativeExpress - The ultimate React Native boilerplate for efficient mobile app development. Start building cross-platform mobile apps faster with our production-ready template.">
-  <meta name="keywords"
-    content="React Native, mobile app development, NativeExpress boilerplate, React Native template, mobile app boilerplate, cross-platform development, Expo boilerplate">
-  <meta name="author" content="NativeExpress">
+    content="NativeExpress is a React Native boilerplate on Expo SDK 57 with Supabase sign-in, RevenueCat subscriptions and AI features working. $229 once, source code you own.">
+  <meta name="author" content="Robin Faraj">
   <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="XWpRbVfgI6vJVnGRdAHCJPXcO0szi61637tiTI9RcMc" />
-  <!-- Performance and browser optimization -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#fd9f48">
-  <meta name="msapplication-TileColor" content="#fd9f48">
-  <meta name="format-detection" content="telephone=no">
-  <title>NativeExpress | React Native Boilerplate for Mobile App Development</title>
+  <meta name="google-site-verification" content="XWpRbVfgI6vJVnGRdAHCJPXcO0szi61637tiTI9RcMc">
+  <meta name="theme-color" content="#151515">
+  <link rel="canonical" href="https://reactnative-boilerplate.github.io/react-native-boilerplate/">
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="Summary for language models">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://native.express" />
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Open Graph meta tags for social sharing -->
-  <meta property="og:title" content="NativeExpress | React Native Boilerplate for Mobile App Development">
-  <meta property="og:description"
-    content="NativeExpress is the ultimate React Native boilerplate that helps developers build high-quality mobile applications in a fraction of the time.">
-  <meta property="og:image" content="https://native.express/og-image.jpg">
-  <meta property="og:url" content="https://native.express">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NativeExpress">
-
-  <!-- Twitter Card meta tags -->
+  <meta property="og:url" content="https://reactnative-boilerplate.github.io/react-native-boilerplate/">
+  <meta property="og:title" content="React Native boilerplate with sign-in, subscriptions and AI already working">
+  <meta property="og:description"
+    content="A complete iOS and Android app you own as source code. Expo SDK 57, Supabase, RevenueCat and three AI features. $229 once.">
+  <meta property="og:image"
+    content="https://reactnative-boilerplate.github.io/react-native-boilerplate/assets/images/social-preview.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="NativeExpress | React Native Boilerplate for Mobile App Development">
-  <meta name="twitter:description"
-    content="NativeExpress is the ultimate React Native boilerplate that helps developers build high-quality mobile applications in a fraction of the time.">
-  <meta name="twitter:image" content="https://native.express/og-image.jpg">
+  <meta name="twitter:creator" content="@robin_faraj">
 
-  <!-- Preload critical assets -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  </noscript>
+  <link rel="preload" href="assets/fonts/Geist_500Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Link to main stylesheet with preload for performance -->
-  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </noscript>
-
-  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "NativeExpress",
-    "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "description": "The ultimate React Native boilerplate for efficient mobile app development.",
-    "url": "https://native.express",
-    "creator": {
-      "@type": "Organization",
-      "name": "NativeExpress",
-      "url": "https://native.express"
-    },
-    "downloadUrl": "https://native.express",
-    "featureList": [
-      "Production-ready React Native boilerplate",
-      "Pre-configured components and workflows", 
-      "Cross-platform iOS and Android support",
-      "Performance optimized foundation"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.native.express/#organization",
+        "name": "NativeExpress",
+        "url": "https://www.native.express",
+        "logo": "https://reactnative-boilerplate.github.io/react-native-boilerplate/assets/images/icon-512.png",
+        "email": "contact@native.express",
+        "founder": { "@type": "Person", "name": "Robin Faraj" },
+        "sameAs": ["https://github.com/reactnative-boilerplate"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "NativeExpress",
+        "description": "A commercial React Native and Expo boilerplate: a working iOS and Android app with authentication, Postgres, payments, push, analytics and three AI features already wired together.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "iOS, Android",
+        "softwareVersion": "2.1.1",
+        "dateModified": "2026-10-02",
+        "url": "https://www.native.express",
+        "publisher": { "@id": "https://www.native.express/#organization" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "229",
+          "highPrice": "1124",
+          "offerCount": "3",
+          "url": "https://www.native.express/#pricing"
+        },
+        "featureList": [
+          "Expo SDK 57, React Native 0.86, TypeScript",
+          "Apple, Google and email sign-in on Supabase",
+          "RevenueCat subscriptions and Superwall paywalls",
+          "AI chat, image generation and camera scan",
+          "OneSignal push, PostHog analytics, Sentry crash reporting",
+          "Agent skills for setup, theming and store submission"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a React Native boilerplate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A React Native boilerplate is a starting codebase with the parts every app needs already built: project structure, navigation, sign-in, payments, and the build and release setup. You start from a working app and replace the example features with your own."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is NativeExpress free or open source?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It is a commercial product with a one-time licence from $229. The GitHub repository behind this page is the public overview. The source code is in a private repository you get access to after purchase. If you need a free starting point, Ignite and the Obytes starter are good ones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What exactly do I get?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Access to the private GitHub repository with the complete React Native and Expo app, the agent skills for setup, conventions, store assets and submission, and documentation with written and video guides. Every tier gets the same code and lifetime updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need mobile experience?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It was first built for web developers: React Native works like React, Expo Router gives you file-based routing, and Uniwind lets you write Tailwind classes. You do need to be comfortable in a terminal. If you have never used one, budget an evening for the tooling first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work with Claude Code, Cursor and Codex?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The setup and conventions skills follow the open skills format, so Claude Code, Cursor, Codex, Gemini CLI and other agents can use them. The store-assets and submit skills are Claude Code skills. The documentation is also published as Markdown that agents can read directly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is better, Expo or the React Native CLI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a new app, Expo. The React Native documentation recommends starting with a framework and names Expo. NativeExpress uses Expo SDK 57 with development builds, so native modules such as RevenueCat and OneSignal work, and you keep EAS Build and file-based routing. There is a longer comparison on the blog."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is React Native still relevant in 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if you want one TypeScript codebase for iOS and Android. React Native 0.86 runs on the New Architecture, and Expo covers builds, updates and store submission. For anyone who already knows React, it is the shortest path to a native app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What other costs are there?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Supabase and Expo have free tiers that cover development. AI usage is billed by your provider at their rates. Publishing needs an Apple Developer account at $99 a year and a Google Play developer account at $25 once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is it kept up to date?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dependencies and frameworks move to their latest stable versions regularly. Version 2 moved to Expo SDK 57, React Native 0.86 and Tailwind v4 through Uniwind. Earlier versions stay tagged in the repository, so a shipped app keeps building until you choose to upgrade. The changelog lists every release."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get a refund?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Once you have access to the repository the code is yours, so purchases cannot be refunded. If you are unsure, email contact@native.express before you buy."
+            }
+          }
+        ]
+      }
     ]
-     }
-   </script>
+  }
+  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRFWP9KR8W"></script>
@@ -92,159 +176,449 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header Navigation -->
   <header class="header">
     <div class="container">
-      <nav class="nav">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="https://native.express" target="_blank" rel="noopener"
-            title="NativeExpress - React Native Boilerplate">
-            <img src="assets/images/logo.svg" alt="NativeExpress Logo" width="24" height="24"
-              style="vertical-align: middle; margin-right: 8px;"> NativeExpress
-          </a>
-        </div>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="https://native.express" target="_blank" rel="noopener"
-              title="NativeExpress Features">Features</a></li>
-          <li><a href="https://docs.native.express" target="_blank" rel="noopener"
-              title="NativeExpress Documentation">Docs</a></li>
-          <li><a href="https://native.express/blog" target="_blank" rel="noopener" title="NativeExpress Blog">Blog</a>
-          </li>
-          <li><a href="https://native.express" class="btn nav-cta" target="_blank" rel="noopener"
-              title="Get Started with NativeExpress">Get Started</a></li>
-        </ul>
+      <a class="brand"
+        href="https://www.native.express/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=react-native-boilerplate">
+        <img src="assets/images/swallow.png" alt="" width="326" height="226">
+        <span>nativeexpress</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#included">What's included</a>
+        <a href="#compare">Compare</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://docs.native.express">Docs</a>
+        <a class="button button-secondary button-small"
+          href="https://www.native.express/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=react-native-boilerplate#pricing">Get
+          NativeExpress</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
+  <main id="main">
 
-    <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>Build your first profitable Mobile App this weekend</h1>
-          <p class="hero-subtitle">Complete React Native boilerplate: Supabase auth, RevenueCat integration, push
-            notifications, AI integration, and more. Everything you need to quickly build, launch, and monetize your
-            app.</p>
+      <div class="container">
+        <p class="eyebrow">React Native boilerplate · v2.1.1 · Expo SDK 57</p>
+        <h1>A React Native boilerplate with sign-in, subscriptions and AI already working.</h1>
+        <p class="lede">NativeExpress is a complete iOS and Android app you own as source code. Supabase handles
+          accounts and data, RevenueCat handles subscriptions, and three AI features run on your own edge functions.
+          You start from an app that already runs and change it into yours.</p>
+        <div class="actions">
+          <a class="button button-primary"
+            href="https://www.native.express/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=react-native-boilerplate#pricing">Get
+            NativeExpress, from $229</a>
+          <a class="button button-secondary" href="https://docs.native.express">Read the docs</a>
+        </div>
+        <p class="terms">One-time payment. Lifetime updates. Commercial use.</p>
 
-          <!-- Key benefits with checkmarks -->
-          <div class="key-points">
-            <div class="point"><span class="check">✔</span> Production-ready React Native boilerplate</div>
-            <div class="point"><span class="check">✔</span> Built specifically for web developers</div>
-            <div class="point"><span class="check">✔</span> Complete mobile app development solution</div>
-          </div>
-
-          <!-- Primary Call to Action -->
-          <div class="hero-cta">
-            <a href="https://native.express" class="btn cta-btn" target="_blank" rel="noopener"
-              title="Get Started with NativeExpress React Native Boilerplate">Get NativeExpress Now</a>
-            <a href="https://docs.native.express" class="btn btn-secondary" target="_blank" rel="noopener"
-              title="Read NativeExpress Documentation">View Documentation</a>
-          </div>
-
-          <!-- Social proof -->
-          <div class="hero-social-proof">
-            <p class="social-proof-text">Trusted by <strong>1000+</strong> React Native developers worldwide</p>
-            <div class="hero-keywords">
-              <small>Perfect for: <a href="#features">React Native boilerplate</a>, <a href="#features">mobile app
-                  development</a>, <a href="#features">cross-platform development</a></small>
-            </div>
-          </div>
+        <div class="screens">
+          <img src="assets/images/screen-sign-in.webp" width="520" height="1130"
+            alt="Sign-in screen with email, Google and Apple options">
+          <img src="assets/images/screen-home.webp" width="520" height="1130"
+            alt="Home screen showing the monthly AI quota and the chat, create and scan features">
+          <img src="assets/images/screen-chat-thread.webp" width="520" height="1130"
+            alt="AI chat thread with a streamed travel itinerary">
+          <img src="assets/images/screen-create.webp" width="520" height="1130" loading="lazy"
+            alt="Image generation screen with style presets and a gallery">
+          <img src="assets/images/screen-quota-sheet.webp" width="520" height="1130" loading="lazy"
+            alt="Paywall sheet shown when the free AI quota is used up">
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <section class="section" id="included">
       <div class="container">
-        <h2>Why Choose NativeExpress</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon" style="background-color: var(--primary);">⚡</div>
-            <h3>Rapid Development</h3>
-            <p>Build React Native apps faster with our pre-configured components and workflows.</p>
+        <p class="eyebrow">What's included</p>
+        <h2>What the React Native starter kit includes</h2>
+        <p class="section-intro">Every part below is wired to the others and runs on the first build. Chat, image
+          generation and scan are separate modules, so you can keep any combination or none.</p>
+        <dl class="rows">
+          <div>
+            <dt>Accounts and data</dt>
+            <dd>Apple, Google and email sign-in on Supabase Auth. Postgres you own, with every table, policy and
+              storage bucket shipped as a migration. Row Level Security is tested against a real database in CI.</dd>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon" style="background-color: var(--primary);">🔧</div>
-            <h3>Production Ready</h3>
-            <p>Start with a solid foundation optimized for performance and scalability.</p>
+          <div>
+            <dt>Subscriptions</dt>
+            <dd>RevenueCat for in-app purchases, and Superwall for paywalls you can redesign and A/B test without
+              shipping a release. The edge functions ask RevenueCat who is Pro before they spend your AI budget.</dd>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon" style="background-color: var(--primary);">📱</div>
-            <h3>Cross-Platform</h3>
-            <p>Deploy to iOS and Android from a single codebase with native performance.</p>
+          <div>
+            <dt>AI features</dt>
+            <dd>Streaming chat with photo attachments, image generation with style presets, and a camera scan that
+              returns a structured result. You switch between GPT, Claude and Gemini in one config file through
+              OpenRouter. No API key ships in the app, and the free quota is enforced on the server.</dd>
           </div>
+          <div>
+            <dt>Interface</dt>
+            <dd>Uniwind, which is Tailwind CSS v4 for React Native, with HeroUI Native components on semantic design
+              tokens. Light and dark mode, phone and iPad layouts, and an onboarding flow.</dd>
+          </div>
+          <div>
+            <dt>Operations</dt>
+            <dd>OneSignal push notifications, PostHog analytics, Sentry crash reporting, translations and
+              password-reset deep links. Each integration is a swappable service you can switch off.</dd>
+          </div>
+          <div>
+            <dt>Agent skills and store tooling</dt>
+            <dd>A setup skill configures every integration and verifies each step. A design skill themes the app.
+              Scripts strip out the features and vendors you don't need, capture store screenshots and prepare the
+              listing metadata.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="eyebrow">Tech stack</p>
+        <h2>The Expo template's stack, by job</h2>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row">Framework</th>
+                <td>Expo SDK 57, React Native 0.86, React 19.2</td>
+              </tr>
+              <tr>
+                <th scope="row">Language</th>
+                <td>TypeScript 6.0</td>
+              </tr>
+              <tr>
+                <th scope="row">Navigation</th>
+                <td>Expo Router, file-based</td>
+              </tr>
+              <tr>
+                <th scope="row">Styling</th>
+                <td>Uniwind (Tailwind CSS v4), HeroUI Native</td>
+              </tr>
+              <tr>
+                <th scope="row">Backend</th>
+                <td>Supabase: Postgres, Auth, Edge Functions, Storage</td>
+              </tr>
+              <tr>
+                <th scope="row">Payments</th>
+                <td>RevenueCat, Superwall</td>
+              </tr>
+              <tr>
+                <th scope="row">AI</th>
+                <td>Vercel AI SDK, OpenRouter</td>
+              </tr>
+              <tr>
+                <th scope="row">Push</th>
+                <td>OneSignal</td>
+              </tr>
+              <tr>
+                <th scope="row">Analytics and crashes</th>
+                <td>PostHog, Sentry</td>
+              </tr>
+              <tr>
+                <th scope="row">Testing</th>
+                <td>Jest, React Native Testing Library</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="features-cta">
-          <a href="https://native.express/#features" class="btn-primary">Explore All Features</a>
+        <p class="table-note">The <a href="https://docs.native.express/tech-stack">tech stack page</a> in the docs
+          explains why each one was chosen.</p>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="container">
+        <p class="eyebrow">Compare</p>
+        <h2>NativeExpress and the free React Native templates</h2>
+        <p class="section-intro">Ignite, the Obytes starter and Expo's default template are free, open source and well
+          maintained. They give you project structure and tooling. NativeExpress is paid and goes further: it includes
+          the backend, payments and store work those templates leave to you.</p>
+        <div class="table-wrap">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">NativeExpress</th>
+                <th scope="col">Ignite</th>
+                <th scope="col">Obytes Starter</th>
+                <th scope="col">create-expo-app</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Price</th>
+                <td>$229 once</td>
+                <td>Free</td>
+                <td>Free</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <th scope="row">Expo SDK</th>
+                <td>57</td>
+                <td>55</td>
+                <td>54</td>
+                <td>Latest</td>
+              </tr>
+              <tr>
+                <th scope="row">React Native</th>
+                <td>0.86</td>
+                <td>0.83</td>
+                <td>0.81</td>
+                <td>Latest</td>
+              </tr>
+              <tr>
+                <th scope="row">Sign-in and backend</th>
+                <td>Supabase with Apple, Google and email</td>
+                <td>No backend</td>
+                <td>No backend</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <th scope="row">Subscriptions</th>
+                <td>RevenueCat and Superwall</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <th scope="row">AI features</th>
+                <td>Chat, image generation, scan</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <th scope="row">Push, analytics, crashes</th>
+                <td>OneSignal, PostHog, Sentry</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <th scope="row">Source</th>
+                <td>Private repository after purchase</td>
+                <td>Open source</td>
+                <td>Open source</td>
+                <td>Open source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Versions and dependencies read from each project's main branch on 5 October 2026.</p>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <div class="container">
+        <p class="eyebrow">Customers</p>
+        <h2>What developers say</h2>
+        <div class="quotes">
+          <figure>
+            <blockquote>It makes the setup and deployment of our projects more efficient, saving us both time and
+              money.</blockquote>
+            <figcaption>Malte Herberg, CTO at TerraOne</figcaption>
+          </figure>
+          <figure>
+            <blockquote>I know how much time you can lose in all the random details. Native Express handles all that
+              for you.</blockquote>
+            <figcaption>Shi Zai, CTO at StackAuth (YC S24)</figcaption>
+          </figure>
+          <figure>
+            <blockquote>As a web developer building my first app, this boilerplate made my life so much easier.
+            </blockquote>
+            <figcaption>Andrei Hudovich, indie maker</figcaption>
+          </figure>
+          <figure>
+            <blockquote>NativeExpress was exactly what I needed, allowed me to launch a fairly complex mobile app in 3
+              months.</blockquote>
+            <figcaption>Matthew L., founder of PolyM</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="cta">
+    <section class="section" id="pricing">
       <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Accelerate Your React Native Development?</h2>
-          <p>Join thousands of developers who are building better mobile apps faster with NativeExpress.</p>
-          <a href="https://native.express" class="btn-primary" target="_blank" rel="noopener">Get Started Today</a>
+        <p class="eyebrow">Pricing</p>
+        <h2>Pay once. Ship unlimited apps.</h2>
+        <p class="section-intro">Every tier gets the same code, commercial use and every future version. The tiers
+          differ in developer seats and support.</p>
+        <div class="tiers">
+          <div>
+            <h3>Solo</h3>
+            <p class="price">$229</p>
+            <p>One developer seat.</p>
+          </div>
+          <div>
+            <h3>Startup</h3>
+            <p class="price">$599</p>
+            <p>Up to 5 seats. Adds client work, priority support and a 90-minute consulting call.</p>
+          </div>
+          <div>
+            <h3>Agency</h3>
+            <p class="price">$1,124</p>
+            <p>Up to 10 seats. Everything in Startup, plus white-label delivery and a private Discord channel.</p>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="button button-primary"
+            href="https://www.native.express/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=react-native-boilerplate#pricing">See
+            pricing on native.express</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions developers ask</h2>
+        <dl class="faq">
+          <div>
+            <dt>What is a React Native boilerplate?</dt>
+            <dd>
+              <p>A React Native boilerplate is a starting codebase with the parts every app needs already built:
+                project structure, navigation, sign-in, payments, and the build and release setup. You start from a
+                working app and replace the example features with your own.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Is NativeExpress free or open source?</dt>
+            <dd>
+              <p>No. It is a commercial product with a one-time licence from $229. The GitHub repository behind this
+                page is the public overview. The source code is in a private repository you get access to after
+                purchase. If you need a free starting point, Ignite and the Obytes starter are good ones.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>What exactly do I get?</dt>
+            <dd>
+              <p>Access to the private GitHub repository with the complete React Native and Expo app, the agent skills
+                for setup, conventions, store assets and submission, and documentation with written and video guides.
+                Every tier gets the same code and lifetime updates.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Do I need mobile experience?</dt>
+            <dd>
+              <p>No. It was first built for web developers: React Native works like React, Expo Router gives you
+                file-based routing, and Uniwind lets you write Tailwind classes. You do need to be comfortable in a
+                terminal. If you have never used one, budget an evening for the tooling first.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Does it work with Claude Code, Cursor and Codex?</dt>
+            <dd>
+              <p>Yes. The setup and conventions skills follow the open skills format, so Claude Code, Cursor, Codex,
+                Gemini CLI and other agents can use them. The store-assets and submit skills are Claude Code skills.
+                The documentation is also published as Markdown that agents can read directly.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Which is better, Expo or the React Native CLI?</dt>
+            <dd>
+              <p>For a new app, Expo. The React Native documentation recommends starting with a framework and names
+                Expo. NativeExpress uses Expo SDK 57 with development builds, so native modules such as RevenueCat
+                and OneSignal work, and you keep EAS Build and file-based routing. There is a
+                <a href="https://www.native.express/blog/expo-vs-react-native-cli">longer comparison on the blog</a>.
+              </p>
+            </dd>
+          </div>
+          <div>
+            <dt>Is React Native still relevant in 2026?</dt>
+            <dd>
+              <p>Yes, if you want one TypeScript codebase for iOS and Android. React Native 0.86 runs on the New
+                Architecture, and Expo covers builds, updates and store submission. For anyone who already knows
+                React, it is the shortest path to a native app.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>What other costs are there?</dt>
+            <dd>
+              <p>Supabase and Expo have free tiers that cover development. AI usage is billed by your provider at
+                their rates. Publishing needs an Apple Developer account at $99 a year and a Google Play developer
+                account at $25 once.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>How is it kept up to date?</dt>
+            <dd>
+              <p>Dependencies and frameworks move to their latest stable versions regularly. Version 2 moved to Expo
+                SDK 57, React Native 0.86 and Tailwind v4 through Uniwind. Earlier versions stay tagged in the
+                repository, so a shipped app keeps building until you choose to upgrade. The
+                <a href="https://www.native.express/changelog">changelog</a> lists every release.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Can I get a refund?</dt>
+            <dd>
+              <p>No. Once you have access to the repository the code is yours, so purchases cannot be refunded. If
+                you are unsure, email <a href="mailto:contact@native.express">contact@native.express</a> before you
+                buy.</p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container">
+        <h2>Ship your app idea today. And charge for it.</h2>
+        <p class="lede">Sign-in, subscriptions and AI are waiting in the starter. Bring the idea and your coding
+          agent.</p>
+        <div class="actions">
+          <a class="button button-primary"
+            href="https://www.native.express/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=react-native-boilerplate#pricing">Get
+            NativeExpress, from $229</a>
+          <a class="button button-secondary" href="https://docs.native.express/setup/quickstart">Read the
+            quickstart</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <a href="https://native.express" target="_blank" rel="noopener">
-            <img src="assets/images/logo.svg" alt="NativeExpress Logo" width="24" height="24"
-              style="vertical-align: middle; margin-right: 8px;"> NativeExpress
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="https://www.native.express">
+            <img src="assets/images/swallow.png" alt="" width="326" height="226" loading="lazy">
+            <span>nativeexpress</span>
           </a>
-          <p>The ultimate React Native boilerplate for efficient mobile app development.</p>
+          <p>The React Native starter for people who would rather ship an app than assemble one.</p>
         </div>
-        <div class="footer-links">
-          <div class="footer-links-column">
-            <h4>Product</h4>
-            <ul>
-              <li><a href="https://native.express/#features" target="_blank" rel="noopener">Features</a></li>
-              <li><a href="https://native.express/#pricing" target="_blank" rel="noopener">Pricing</a></li>
-              <li><a href="https://docs.native.express" target="_blank" rel="noopener">Documentation</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-column">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="https://native.express/about" target="_blank" rel="noopener">About Us</a></li>
-              <li><a href="https://native.express/blog" target="_blank" rel="noopener">Blog</a></li>
-              <li><a href="https://native.express/contact" target="_blank" rel="noopener">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-column">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="https://native.express/tutorials" target="_blank" rel="noopener">Tutorials</a></li>
-              <li><a href="https://native.express/examples" target="_blank" rel="noopener">Examples</a></li>
-              <li><a href="https://native.express/community" target="_blank" rel="noopener">Community</a></li>
-            </ul>
-          </div>
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li><a href="https://www.native.express/developers">For developers</a></li>
+            <li><a href="https://www.native.express/#pricing">Pricing</a></li>
+            <li><a href="https://www.native.express/changelog">Changelog</a></li>
+            <li><a href="https://www.native.express/apps">Apps built with it</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 NativeExpress. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="https://native.express/privacy" target="_blank" rel="noopener">Privacy Policy</a>
-          <a href="https://native.express/terms" target="_blank" rel="noopener">Terms of Service</a>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://docs.native.express">Documentation</a></li>
+            <li><a href="https://www.native.express/blog">Blog</a></li>
+            <li><a href="https://www.native.express/tools">Free tools</a></li>
+            <li><a href="https://github.com/reactnative-boilerplate/react-native-boilerplate">GitHub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="https://www.native.express/legal/imprint">Imprint</a></li>
+            <li><a href="https://www.native.express/legal/privacy-policy">Privacy policy</a></li>
+            <li><a href="https://www.native.express/legal/terms">Terms of Service</a></li>
+            <li><a href="https://www.native.express/legal/license">License</a></li>
+          </ul>
         </div>
       </div>
+      <p class="footer-legal">© 2026 JRS Content Solutions UG (haftungsbeschränkt). Made in Germany, shipped
+        everywhere.</p>
     </div>
   </footer>
 
