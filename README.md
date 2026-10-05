@@ -171,7 +171,7 @@ A React Native boilerplate is a starting codebase with the parts every app needs
 
 ### Is NativeExpress free or open source?
 
-No. It is a commercial product with a one-time licence from $229. This repository is the public overview. The source code is in a private repository you get access to after purchase. If you need a free starting point, Ignite and the Obytes starter are good ones.
+No. It is a commercial product with a one-time licence from $229. This repository is the public overview. The source code is in a private repository you get access to after purchase. If you want a free starting point, we publish one: the [Mobile App Code Template](https://github.com/robinsadeghpour/mobile-app-code-template) is an MIT-licensed Expo app with email sign-in, account deletion and a Supabase database with row-level security. It leaves out payments, Google and Apple sign-in and push. Ignite and the Obytes starter are good free options too.
 
 ### What exactly do I get?
 
@@ -211,6 +211,7 @@ No. Once you have access to the repository the code is yours, so purchases canno
 - [Documentation](https://docs.native.express): setup, every integration and store submission
 - [Changelog](https://www.native.express/changelog): every release
 - [Apps built with NativeExpress](https://www.native.express/apps)
+- [Mobile App Code Template](https://github.com/robinsadeghpour/mobile-app-code-template): our free MIT starter with the sign-in and database core
 - [Discord](https://discord.gg/BZDNtf8hqt): help and discussion
 - [@robin_faraj](https://x.com/robin_faraj): the maintainer
 
