@@ -32,6 +32,7 @@ The current release is 2.1.2, published 2026-10-05.
 
 - [NativeExpress](https://www.native.express): Product site, pricing and purchase.
 - [Product summary for agents (llms.txt)](https://www.native.express/llms.txt): The maintained version of this summary.
+- [React Native boilerplates compared](https://reactnative-boilerplate.github.io/react-native-boilerplate/best-react-native-boilerplates.html): Eight kits by price, stack and coding agent support, written by NativeExpress.
 - [Documentation](https://docs.native.express): Setup, every integration, and store submission.
 - [Documentation index for agents (llms.txt)](https://docs.native.express/llms.txt): Every documentation page as a titled, described link.
 - [Changelog](https://www.native.express/changelog): Every release.

@@ -110,6 +110,9 @@ Claude Code reads the skills from `.claude/skills`. Codex, Cursor, Copilot, Gemi
 
 Versions and dependencies were read from each project's main branch on 5 October 2026.
 
+
+Compare paid kits too: [best React Native boilerplates in 2026](https://reactnative-boilerplate.github.io/react-native-boilerplate/best-react-native-boilerplates.html).
+
 ## Start a new app from the Expo template
 
 After purchase you get access to the private repository. Setup needs Node 22 or newer.

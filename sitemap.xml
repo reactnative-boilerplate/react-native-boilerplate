@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://reactnative-boilerplate.github.io/react-native-boilerplate/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://reactnative-boilerplate.github.io/react-native-boilerplate/best-react-native-boilerplates.html</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
 </urlset>
