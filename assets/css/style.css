@@ -532,3 +532,10 @@ tbody th {
     transition: none;
   }
 }
+
+/* The header's button has no room on a phone; the hero repeats it directly below. */
+@media (max-width: 480px) {
+  .nav .button-small {
+    display: none;
+  }
+}
