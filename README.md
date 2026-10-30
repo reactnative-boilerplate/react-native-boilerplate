@@ -9,7 +9,7 @@
   <img alt="Expo SDK 57" src="https://img.shields.io/badge/Expo-SDK%2057-151515.svg" />
   <img alt="React 19.2" src="https://img.shields.io/badge/React-19.2-151515.svg" />
   <img alt="TypeScript 6.0" src="https://img.shields.io/badge/TypeScript-6.0-151515.svg" />
-  <img alt="Release 2.1.1" src="https://img.shields.io/badge/release-2.1.1-151515.svg" />
+  <img alt="Release 2.1.2" src="https://img.shields.io/badge/release-2.1.2-151515.svg" />
 </p>
 
 <p align="center">
@@ -80,6 +80,18 @@ Every part below is wired to the others and runs on the first build. Chat, image
 | Testing | Jest, React Native Testing Library |
 
 The [tech stack page](https://docs.native.express/tech-stack) in the docs explains why each one was chosen.
+
+## Built for Claude Code, Cursor and Codex
+
+NativeExpress ships with instructions and skills for coding agents. Open the project in your agent, ask it to set up the app, and it works through each integration and checks the result.
+
+- **Project instructions:** `AGENTS.md` and `CLAUDE.md` tell the agent how the project is built. `PRODUCT.md` holds your product brief.
+- **Setup:** the `setup` skill configures Supabase, AI, payments, push, analytics and sign-in, and verifies each one.
+- **Design:** the `design` skill generates a theme from your brand colours and makes the icon and splash screen from your logo.
+- **Conventions:** the `conventions`, `uniwind` and `heroui-native` skills show the agent how this codebase is written.
+- **Store submission:** in Claude Code, `store-assets` produces your store graphics and `submit` builds with EAS and submits to both stores.
+
+Claude Code reads the skills from `.claude/skills`. Codex, Cursor, Copilot, Gemini CLI, Amp and OpenCode read them from `.agents/skills`. The two store skills are Claude Code only.
 
 ## NativeExpress and the free React Native templates
 

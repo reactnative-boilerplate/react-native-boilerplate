@@ -21,7 +21,12 @@ and Sentry reports crashes. The AI features (chat, image generation, camera scan
 on OpenRouter through the Vercel AI SDK. Styling is Uniwind, which is Tailwind CSS v4
 for React Native, with HeroUI Native components.
 
-The current release is 2.1.1, published 2026-10-02.
+It is built to be set up by a coding agent. AGENTS.md and CLAUDE.md describe the project, and
+bundled skills configure each integration, theme the app and submit it to the stores. Claude Code
+reads .claude/skills; Codex, Cursor, Copilot, Gemini CLI, Amp and OpenCode read .agents/skills. The
+store-assets and submit skills are Claude Code only.
+
+The current release is 2.1.2, published 2026-10-05.
 
 ## Links
 

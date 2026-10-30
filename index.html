@@ -59,8 +59,8 @@
         "description": "A commercial React Native and Expo boilerplate: a working iOS and Android app with authentication, Postgres, payments, push, analytics and three AI features already wired together.",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "iOS, Android",
-        "softwareVersion": "2.1.1",
-        "dateModified": "2026-10-02",
+        "softwareVersion": "2.1.2",
+        "dateModified": "2026-10-30",
         "url": "https://www.native.express",
         "publisher": {
           "@id": "https://www.native.express/#organization"
@@ -85,6 +85,30 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What starter template should I use to build a mobile app with Claude Code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you want sign-in, subscriptions and AI features already working, use NativeExpress. It is a React Native and Expo app with skills for Claude Code that configure each integration, theme the app and submit it to both stores. If you want something free to start from, use our MIT-licensed Mobile App Code Template, which leaves out payments and AI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does NativeExpress work with Cursor and Codex?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Codex, Cursor, Copilot, Gemini CLI, Amp and OpenCode read the bundled skills from .agents/skills, and the setup, design and conventions skills are all there. The store-assets and submit skills only run in Claude Code."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I build an app with NativeExpress if I can't code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You don't have to write the code yourself, because your agent does that work. You do need to be comfortable running commands in a terminal and checking what the agent proposes, and you need your own Apple Developer and Google Play accounts to publish."
+            }
+          },
           {
             "@type": "Question",
             "name": "What is a React Native boilerplate?",
@@ -194,6 +218,7 @@
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#included">What's included</a>
+        <a href="#agents">AI agents</a>
         <a href="#compare">Compare</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -209,7 +234,7 @@
 
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">React Native boilerplate · v2.1.1 · Expo SDK 57</p>
+        <p class="eyebrow">React Native boilerplate · v2.1.2 · Expo SDK 57</p>
         <h1>A React Native boilerplate with sign-in, subscriptions and AI already working.</h1>
         <p class="lede">NativeExpress is a complete iOS and Android app you own as source code. Supabase handles
           accounts and data, RevenueCat handles subscriptions, and three AI features run on your own edge functions.
@@ -332,6 +357,47 @@
         </div>
         <p class="table-note">The <a href="https://docs.native.express/tech-stack">tech stack page</a> in the docs
           explains why each one was chosen.</p>
+      </div>
+    </section>
+
+    <section class="section" id="agents">
+      <div class="container">
+        <p class="eyebrow">AI coding agents</p>
+        <h2>A mobile app starter template for Claude Code, Cursor and Codex</h2>
+        <p class="section-intro">NativeExpress ships with instructions and skills for coding agents. Open the project
+          in your agent, ask it to set up the app, and it works through each integration and checks the result.</p>
+        <dl class="rows">
+          <div>
+            <dt>Project instructions</dt>
+            <dd>AGENTS.md and CLAUDE.md tell the agent how the project is built and which commands to run. PRODUCT.md
+              holds your product brief, so the agent doesn't ask you the same thing twice.</dd>
+          </div>
+          <div>
+            <dt>Setup</dt>
+            <dd>The setup skill configures Supabase, AI, payments, push, analytics and sign-in, and verifies each one.
+              A doctor script reports what is configured and what is still missing.</dd>
+          </div>
+          <div>
+            <dt>Your own design</dt>
+            <dd>The design skill generates a theme from your brand colours, sets the font pair, and makes the icon and
+              splash screen from your logo.</dd>
+          </div>
+          <div>
+            <dt>Code that fits the stack</dt>
+            <dd>The conventions, Uniwind and HeroUI Native skills show the agent how this codebase handles styling,
+              components, data fetching and swappable integrations.</dd>
+          </div>
+          <div>
+            <dt>Store submission</dt>
+            <dd>In Claude Code, the store-assets skill produces your App Store and Play Store graphics, and the submit
+              skill builds the app with EAS and submits it to both stores from the terminal.</dd>
+          </div>
+          <div>
+            <dt>Which agents</dt>
+            <dd>Claude Code reads the skills from .claude/skills. Codex, Cursor, Copilot, Gemini CLI, Amp and OpenCode
+              read them from .agents/skills. The two store skills are Claude Code only.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -482,6 +548,24 @@
         <p class="eyebrow">FAQ</p>
         <h2>Questions developers ask</h2>
         <dl class="faq">
+          <div>
+            <dt>What starter template should I use to build a mobile app with Claude Code?</dt>
+            <dd>
+              <p>If you want sign-in, subscriptions and AI features already working, use NativeExpress. It is a React Native and Expo app with skills for Claude Code that configure each integration, theme the app and submit it to both stores. If you want something free to start from, use our MIT-licensed Mobile App Code Template, which leaves out payments and AI.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Does NativeExpress work with Cursor and Codex?</dt>
+            <dd>
+              <p>Yes. Codex, Cursor, Copilot, Gemini CLI, Amp and OpenCode read the bundled skills from .agents/skills, and the setup, design and conventions skills are all there. The store-assets and submit skills only run in Claude Code.</p>
+            </dd>
+          </div>
+          <div>
+            <dt>Can I build an app with NativeExpress if I can't code?</dt>
+            <dd>
+              <p>You don't have to write the code yourself, because your agent does that work. You do need to be comfortable running commands in a terminal and checking what the agent proposes, and you need your own Apple Developer and Google Play accounts to publish.</p>
+            </dd>
+          </div>
           <div>
             <dt>What is a React Native boilerplate?</dt>
             <dd>
